@@ -67,8 +67,18 @@ namespace ArraysAndLoopsExercises
 
             Console.Clear();
             Console.WriteLine("SORT THE NUMBERS\n");
-
+            int[] peoplesNumbers = new int[10];
+            
             // Enter your solution here
+            for(int i =0; i<10; i++)
+            {
+                Console.WriteLine("Enter a number:");
+                peoplesNumbers[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            Array.Sort(peoplesNumbers);
+
+            Console.WriteLine("First Number " + peoplesNumbers[0] + ", Last Number " + peoplesNumbers[9]);
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
